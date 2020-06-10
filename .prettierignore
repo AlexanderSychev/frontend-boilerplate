@@ -1,0 +1,9 @@
+node_modules/
+.yarnrc
+.browserslistrc
+dist/
+lib/
+src/store/AppState.ts
+src/store/reducer.ts
+src/store/index.ts
+src/components/index.ts

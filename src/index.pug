@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title #{APP_DESCRIPTION} v#{APP_VERSION} - Build #{BUILD_TIMESTAMP}
+        link(rel='stylesheet', href='/css/' + APP_NAME + '.css?' + BUILD_TIMESTAMP)
+    body
+        div#app
+        script(src='/js/' + APP_NAME + '.js?' + BUILD_TIMESTAMP)
