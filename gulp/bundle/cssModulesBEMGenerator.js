@@ -1,7 +1,7 @@
 'use strict';
 
-const { kebabCase } = require('lodash');
 const path = require('path');
+const { kebabCase } = require('lodash');
 
 /**
  * BEM-like class names generator for CSS modules
