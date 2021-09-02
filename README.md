@@ -14,6 +14,16 @@ Install all dependencies:
 yarn install
 ```
 
+Initialize Husky Git hooks:
+```
+npx husky install
+```
+
+Run project in development mode (will be opened on http://localhost:8000):
+```bash
+yarn start
+```
+
 Build in development mode:
 ```bash
 yarn run build-dev
