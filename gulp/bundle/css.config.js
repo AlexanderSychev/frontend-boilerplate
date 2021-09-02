@@ -3,7 +3,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const cssModulesBEMGenerator = require('./cssModulesBEMGenerator');
-const dirs = require('../dirs');
+const dirs = require('../../dirs');
 
 /**
  * Generate CSS files rules

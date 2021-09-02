@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-const dirs = require('../dirs');
+const dirs = require('../../dirs');
 
 /** Entry point configuration */
 module.exports = {

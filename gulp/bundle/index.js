@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const { merge } = require('webpack-merge');
 
-const dirs = require('../dirs');
+const dirs = require('../../dirs');
 
 /** Create `.js` and `.css` bundles for project */
 function bundle() {

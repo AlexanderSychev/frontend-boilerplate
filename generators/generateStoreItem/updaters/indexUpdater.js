@@ -4,11 +4,10 @@ const path = require('path');
 const {
     promises: { unlink, writeFile },
 } = require('fs');
-const { upperFirst } = require('lodash');
 
 const getItemsList = require('./getItemsList');
 const fileExists = require('../../fileExists');
-const { STORE } = require('../../dirs');
+const { STORE } = require('../../../dirs');
 
 /**
  * @param {string[]} items

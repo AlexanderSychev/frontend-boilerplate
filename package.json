@@ -6,8 +6,8 @@
     "license": "MIT",
     "scripts": {
         "start": "gulp --env=development",
-        "generate-component": "node ./build-tool generate-component",
-        "generate-store-item": "node ./build-tool generate-store-item",
+        "generate-component": "node ./generators generate-component",
+        "generate-store-item": "node ./generators generate-store-item",
         "build": "gulp build",
         "build-dev": "gulp build --env=development",
         "precommit": "gulp lint"
@@ -78,7 +78,7 @@
         "style-loader": "3.2.1",
         "mkdirp": "1.0.4",
         "rimraf-promise": "2.0.0",
-        "glob": "7.1.6",
+        "glob": "7.1.7",
         "gulp": "4.0.2",
         "gulp-eslint": "6.0.0",
         "gulp-prettier": "4.0.0",

@@ -7,7 +7,7 @@ const mkdirp = require('mkdirp');
 const path = require('path');
 
 const updaters = require('./updaters');
-const { STORE } = require('../dirs');
+const { STORE } = require('../../dirs');
 
 const template = {
     actions: require('./actions.template'),

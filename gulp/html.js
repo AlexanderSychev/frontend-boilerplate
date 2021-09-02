@@ -9,7 +9,7 @@ const pug = require('pug');
 const fs = require('fs/promises');
 
 const metadata = require('./metadata');
-const { SRC, LIB } = require('./dirs');
+const { SRC, LIB } = require('../dirs');
 
 const SRC_FILE = path.join(SRC, 'index.pug');
 const DST_FILE = path.join(LIB, 'index.html');

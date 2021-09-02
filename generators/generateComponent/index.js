@@ -6,7 +6,7 @@ const {
 const mkdirp = require('mkdirp');
 const path = require('path');
 
-const { COMPONENTS } = require('../dirs');
+const { COMPONENTS } = require('../../dirs');
 const indexUpdater = require('./indexUpdater');
 
 const template = {

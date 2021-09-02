@@ -3,7 +3,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const dirs = require('../dirs');
+const dirs = require('../../dirs');
 const metadata = require('../metadata');
 
 /**

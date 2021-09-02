@@ -7,7 +7,7 @@ const {
 
 const fileExists = require('../../fileExists');
 const getItemsList = require('./getItemsList');
-const { STORE } = require('../../dirs');
+const { STORE } = require('../../../dirs');
 
 /**
  * @param {string[]} items

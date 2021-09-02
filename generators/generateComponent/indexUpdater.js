@@ -1,13 +1,11 @@
 'use strict';
 
 const path = require('path');
-const {
-    promises: { stat, unlink, writeFile },
-} = require('fs');
+const { stat, unlink, writeFile } = require('fs/promises');
 
 const globPromise = require('../globPromise');
 const fileExists = require('../fileExists');
-const { COMPONENTS } = require('../dirs');
+const { COMPONENTS } = require('../../dirs');
 
 /**
  * @returns {Promise<string>}
@@ -19,9 +17,14 @@ const getAutoExports = async () => {
     const allItems = await globPromise(path.join(COMPONENTS, '*'));
     const allItemsStats = await Promise.all(allItems.map((item) => stat(item)));
 
+    const componentsDir =
+        process.platform === 'win32'
+        ? COMPONENTS.replace(/\\/g, '/')
+        : COMPONENTS;
+
     allItemsStats.forEach((stat, index) => {
         if (stat.isDirectory()) {
-            const dir = allItems[index].replace(COMPONENTS, '').substr(1);
+            const dir = allItems[index].replace(componentsDir, '').substr(1);
             if (dir !== 'utils') {
                 dirs.push(dir);
             }

@@ -11,7 +11,7 @@ const gulp = require('gulp');
 const CssComb = require('csscomb');
 const prettier = require('gulp-prettier');
 
-const { SRC } = require('./dirs');
+const { SRC } = require('../dirs');
 const PRETTIER_CONFIG = require('../.prettierrc.json');
 
 /** Beautify `.ts` and `.tsx` files by Prettier */

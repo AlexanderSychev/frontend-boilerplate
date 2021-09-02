@@ -10,7 +10,7 @@ const gulpEslint = require('gulp-eslint');
 const gulp = require('gulp');
 const typescript = require('gulp-typescript');
 
-const { SRC } = require('./dirs');
+const { SRC } = require('../dirs');
 
 /** Lint source code by ESLint */
 function eslint() {

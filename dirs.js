@@ -1,6 +1,6 @@
 /**
  * @fileoverview Some absolute paths for project.
- * Using by most Gulp tasks and Webpack Bundler.
+ * Using by most Gulp tasks, Webpack Bundler and generators scripts.
  */
 
 'use strict';
@@ -8,7 +8,7 @@
 const path = require('path');
 
 /** Project root directory */
-const ROOT = path.resolve(__dirname, '..');
+const ROOT = __dirname;
 
 // Source code directories
 

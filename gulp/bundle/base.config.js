@@ -3,7 +3,7 @@
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-const dirs = require('../dirs');
+const dirs = require('../../dirs');
 const metadata = require('../metadata');
 
 module.exports = {
