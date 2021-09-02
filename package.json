@@ -9,7 +9,8 @@
         "generate-component": "node ./build-tool generate-component",
         "generate-store-item": "node ./build-tool generate-store-item",
         "build": "gulp build",
-        "build-dev": "gulp build --env=development"
+        "build-dev": "gulp build --env=development",
+        "precommit": "gulp lint"
     },
     "devDependencies": {
         "@babel/core": "7.15.0",
@@ -82,6 +83,7 @@
         "gulp-eslint": "6.0.0",
         "gulp-prettier": "4.0.0",
         "gulp-typescript": "6.0.0-alpha.1",
-        "yargs": "17.1.1"
+        "yargs": "17.1.1",
+        "husky": "7.0.2"
     }
 }
