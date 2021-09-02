@@ -8,6 +8,7 @@ const { bundle, devServer } = require('./gulp/bundle');
 const { comb, combCss, combTs } = require('./gulp/comb');
 const { eslint, tsc, lint } = require('./gulp/lint');
 const { watchCss, watchTs, watch } = require('./gulp/watch');
+const { precommit, prepush } = require('./gulp/hooks');
 
 /** Simple build */
 const build = gulp.parallel(html, bundle);
@@ -29,5 +30,7 @@ module.exports = {
     watchCss,
     watchTs,
     watch,
+    prepush,
+    precommit,
     default: defaultTask,
 };
