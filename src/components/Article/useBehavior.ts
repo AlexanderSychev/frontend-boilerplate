@@ -12,8 +12,8 @@ const useBehavior = (): Behavior => {
     const title = useSelector(article.selectors.getTitle);
     const content = useSelector(article.selectors.getContent);
 
-    const setTitle = useCallback((title: string) => dispatch(article.actions.setTitle(title)), [dispatch]);
-    const setContent = useCallback((title: string) => dispatch(article.actions.setContent(title)), [dispatch]);
+    const setTitle = useCallback((value: string) => dispatch(article.actions.setTitle(value)), [dispatch]);
+    const setContent = useCallback((value: string) => dispatch(article.actions.setContent(value)), [dispatch]);
 
     return { title, content, setTitle, setContent };
 };

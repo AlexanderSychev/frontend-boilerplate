@@ -7,10 +7,10 @@ import { Article } from './types';
 
 const title = reducerWithInitialState<string>('')
     .cases([resetStore, actions.clear], () => '')
-    .case(actions.setTitle, (_, title) => title);
+    .case(actions.setTitle, (_, value) => value);
 
 const content = reducerWithInitialState<string>('')
     .cases([resetStore, actions.clear], () => '')
-    .case(actions.setContent, (_, title) => title);
+    .case(actions.setContent, (_, value) => value);
 
 export default combineReducers<Article>({ title, content });

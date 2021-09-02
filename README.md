@@ -3,9 +3,9 @@
 My personal boilerplate for frontend projects
 
 ## Requirements
-* Node.JS 12.17.0+
-* GNU Make 4.2.1+
-* Yarn 1.22.4+
+* Node.JS 14.15.3+;
+* Yarn 1.22.11+;
+* Gulp CLI 2.3.0+;
 
 ## Revert from scratch
 
@@ -16,12 +16,12 @@ yarn install
 
 Build in development mode:
 ```bash
-yarn build-dev
+yarn run build-dev
 ```
 
 Or build in production mode:
 ```bash
-yarn build
+yarn run build
 ```
 
 ## Generators
@@ -33,7 +33,7 @@ Boilerplate provides code generation for React components and Redux Store items.
 Command:
 
 ```bash
-yarn generate-component <ComponentName> [--behavior]
+yarn run generate-component <ComponentName> [--behavior]
 ```
 
 Parameters:
@@ -46,7 +46,7 @@ Parameters:
 Command:
 
 ```bash
-yarn generate-store-item <itemName>
+yarn run generate-store-item <itemName>
 ```
 
 Parameters:

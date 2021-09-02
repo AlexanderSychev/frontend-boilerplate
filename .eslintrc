@@ -5,9 +5,8 @@
     "extends": [
         "airbnb",
         "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "prettier/@typescript-eslint",
-        "prettier/react"
+        "plugin:import/typescript",
+        "prettier"
     ],
     "rules": {
         // Requires in js code are fine
@@ -21,7 +20,13 @@
                 "peerDependencies": true
             }
         ],
-        "no-use-before-define": ["error", "nofunc"],
+        "react/jsx-props-no-spreading": "off",
+        "jsx-a11y/alt-text": "off",
+        "no-use-before-define": "off",
+        "import/no-cycle": "off",
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
         "no-console": ["error", { "allow": ["warn", "error", "info", "groupCollapsed", "groupEnd"] }],
         "capitalized-comments": ["error", "always", { "ignorePattern": "tslint|webpackChunkName" }]
@@ -32,9 +37,12 @@
             "settings": {
                 "import/resolver": {
                     "node": {
-                        "extensions": [".ts", ".tsx", ".d.ts", ".js"]
+                        "extensions": [".js"]
                     },
-                    "typescript": {}
+                    "typescript": {
+                        "extensions": [".ts", ".tsx", ".d.ts"],
+                        "alwaysTryTypes": true
+                    }
                 },
                 "import/ignore": [".scss"]
             },
@@ -49,7 +57,7 @@
                 // Empty interfaces for Props are convenient
                 "@typescript-eslint/no-empty-interface": "off",
                 // Unavoidable in some cases
-                "@typescript-eslint/no-non-null-assertion": "warn",
+                "@typescript-eslint/no-non-null-assertion": "off",
                 // Useless
                 "@typescript-eslint/explicit-function-return-type": "off",
                 // https://github.com/eslint/typescript-eslint-parser/issues/437
